@@ -142,7 +142,7 @@ function SideDrawer() {
           </Button>
         </Tooltip>
         <Text fontSize="2xl" fontFamily="Work sans">
-          Talk-A-Tive
+          VJ-Chat-Apps
         </Text>
         <div>
           <Menu>
@@ -207,11 +207,11 @@ function SideDrawer() {
             {loading ? (
               <ChatLoading />
             ) : (
-              searchResult?.map((user) => (
+              searchResult?.map((data) => (
                 <UserListItem
-                  key={user._id}
-                  user={user}
-                  handleFunction={() => accessChat(user._id)}
+                  key={data._id}
+                  data={data}
+                  handleFunction={() => accessChat(data._id)}
                 />
               ))
             )}
