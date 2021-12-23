@@ -7,14 +7,6 @@
     "start": "nodemon backend/server.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
-  "engines": {
-    "node": "8.1.1",
-    "npm": "5.0.3"
-  },
-  "keywords": [
-    "mern",
-    "chat-app"
-  ],
   "author": "Vincent",
   "license": "ISC",
   "dependencies": {
